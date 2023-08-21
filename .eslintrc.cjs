@@ -16,5 +16,15 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-unused-vars': [
+      'warn',
+      {
+        ignoreRestSiblings: true,
+        destructuredArrayIgnorePattern: '[A-Z]',
+        caughtErrors: 'none',
+      },
+    ],
+
+    'react/prop-types': ['off'],
   },
-}
+};
