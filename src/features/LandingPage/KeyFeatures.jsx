@@ -1,9 +1,13 @@
+import KeyFeaturesBox from "./KeyFeaturesBox";
+import SectionTitle from "./SectionTitle";
+
 function KeyFeatures() {
   return (
-    <div>
-      Key features
-    </div>
-  )
+    <section>
+      <SectionTitle>all for free</SectionTitle>
+      <KeyFeaturesBox />
+    </section>
+  );
 }
 
-export default KeyFeatures
+export default KeyFeatures;
