@@ -1,10 +1,9 @@
 function LandingPageImage({ imageNumber }) {
-  console.log(imageNumber);
   return (
     <img
       src={`../src/assets/landing_page_${imageNumber}.jpg`}
       alt="Workout"
-      className="shadow-behindImage shadow-customred/25"
+      className="shadow-behindImage shadow-customred/25 rounded-sm"
     />
   );
 }

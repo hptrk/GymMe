@@ -7,7 +7,7 @@ function Quote() {
 
       <span className="font-main font-normal">
         <span className="block">
-          experience <b className="font-bold">progress</b> like never before
+          experience <b className="font-semibold">progress</b> like never before
         </span>
         <span className="block"> with our handy workout tracker</span>
       </span>

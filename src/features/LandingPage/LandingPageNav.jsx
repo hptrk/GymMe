@@ -7,7 +7,9 @@ function LandingPageNav() {
     <nav className="grid grid-cols-3 items-center bg-transparent px-6 py-3">
       <HiMenuAlt2 color="#fafafa" size={30} style={{ display: "inline" }} />
       <Logo />
-      <Button isLastGridItem={true}>login</Button>
+      <Button type={"transparent"} size={"small"} isLastGridItem={true}>
+        login
+      </Button>
     </nav>
   );
 }
