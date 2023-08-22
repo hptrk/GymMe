@@ -1,12 +1,12 @@
 import CallToAction from "./CallToAction";
 import Quote from "./Quote";
-import Image from "../../ui/LandingPageImage";
+import LandingPageImage from "./LandingPageImage";
 
 function Hero() {
   return (
     <section className="mt-8">
       <Quote />
-      <Image imageNumber={"1"} />
+      <LandingPageImage imageNumber={"1"} />
       <CallToAction />
     </section>
   );
