@@ -3,7 +3,7 @@ function Logo() {
     <img
       src="../src/assets/gymme_logo_white_red.png"
       alt="GymMe logo"
-      className="h-9"
+      className=" mx-auto inline h-9"
     />
   );
 }

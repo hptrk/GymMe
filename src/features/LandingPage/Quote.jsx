@@ -1,0 +1,18 @@
+function Quote() {
+  return (
+    <div className="mb-5 text-center font-secondary font-black">
+      <span className="mb-2 block text-4xl">
+        Track, Train, <strong className=" block text-red-500">Transform</strong>
+      </span>
+
+      <span className="font-main font-normal">
+        <span className="block">
+          experience <b className="font-bold">progress</b> like never before
+        </span>
+        <span className="block"> with our handy workout tracker</span>
+      </span>
+    </div>
+  );
+}
+
+export default Quote;

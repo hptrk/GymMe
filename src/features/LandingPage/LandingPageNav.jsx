@@ -4,10 +4,10 @@ import { HiMenuAlt2 } from "react-icons/hi";
 
 function LandingPageNav() {
   return (
-    <nav className="flex items-center justify-between bg-transparent px-6 py-3">
-      <HiMenuAlt2 color="#fafafa" size={30} />
+    <nav className="grid grid-cols-3 items-center bg-transparent px-6 py-3">
+      <HiMenuAlt2 color="#fafafa" size={30} style={{ display: "inline" }} />
       <Logo />
-      <Button>login</Button>
+      <Button isLastGridItem={true}>login</Button>
     </nav>
   );
 }

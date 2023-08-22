@@ -7,7 +7,7 @@ import LandingPageNav from "../features/LandingPage/LandingPageNav";
 
 function LandingPage() {
   return (
-    <div className="font-main bg-neutral-950">
+    <div className="bg-neutral-950 font-main text-neutral-50">
       <header>
         <LandingPageNav />
       </header>
