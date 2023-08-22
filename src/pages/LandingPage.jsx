@@ -3,22 +3,24 @@ import AllForFree from "../features/LandingPage/AllForFree";
 import Hero from "../features/LandingPage/Hero";
 import KeyFeatures from "../features/LandingPage/KeyFeatures";
 import Testimonials from "../features/LandingPage/Testimonials";
-import LandingPageNav from "../ui/LandingPageNav";
+import LandingPageNav from "../features/LandingPage/LandingPageNav";
 
 function LandingPage() {
   return (
-    <>
-      <header className="bg-purple-800">
-        <LandingPageNav />;
+    <div className="font-main bg-neutral-950">
+      <header>
+        <LandingPageNav />
       </header>
-      <main className="h-screen bg-neutral-950">
+      <main className="h-screen">
         <Hero />
         <KeyFeatures />
         <AllForFree />
         <Testimonials />
-        <AboutUs />
       </main>
-    </>
+      <footer>
+        <AboutUs />
+      </footer>
+    </div>
   );
 }
 

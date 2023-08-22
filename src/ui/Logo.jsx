@@ -1,9 +1,9 @@
 function Logo() {
   return (
     <img
-      src="../src/assets/gymme_logo_white.png"
+      src="../src/assets/gymme_logo_white_red.png"
       alt="GymMe logo"
-      className="h-10"
+      className="h-9"
     />
   );
 }
