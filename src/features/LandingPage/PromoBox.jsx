@@ -1,7 +1,9 @@
 import { HiChartBar, HiLightningBolt, HiUsers } from "react-icons/hi";
 import IconBox from "./IconBox";
 import TextWithTitle from "./TextWithTitle";
+import SectionTitle from "./SectionTitle";
 import BlurryLight from "../../ui/BlurryLight";
+
 const features = [
   {
     id: 1,
@@ -22,9 +24,10 @@ const features = [
     text: "tailor your fitness routine with ease, craft personalized workouts and track your gains immediately along the way",
   },
 ];
+
 function PromoBox() {
   return (
-    <div className="relative flex flex-col space-y-8 rounded-lg bg-neutral-900 px-4 pb-6 pt-2">
+    <div className="relative flex flex-col space-y-8 rounded-lg bg-neutral-900 px-4 pb-8 pt-2">
       {features.map((feature) => (
         <div className="flex items-center justify-start gap-4" key={feature.id}>
           <IconBox key={feature.id}>{feature.icon}</IconBox>
@@ -35,6 +38,14 @@ function PromoBox() {
           />
         </div>
       ))}
+      <span className="absolute bottom-1 right-2 ">
+        <SectionTitle
+          fontSize={"text-xs font-black"}
+          fontWeight={"font-normal"}
+        >
+          and even more...
+        </SectionTitle>
+      </span>
       <BlurryLight positions={"top-[5%] left-5"} />
       <BlurryLight positions={"top-[50%] right-5"} translateY={true} />
       <BlurryLight positions={"bottom-[10%] left-5"} />

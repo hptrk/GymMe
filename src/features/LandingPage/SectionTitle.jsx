@@ -1,18 +1,28 @@
-function SectionTitle({ children, alignSelf, marginLeft }) {
+function SectionTitle({
+  children,
+  alignSelf,
+  marginLeft,
+  fontSize,
+  fontWeight,
+}) {
   if (!children) return;
   // To separate the last word for easier styling
   const words = children.split(" ");
 
   return (
     <span
-      className={`${
-        marginLeft ? marginLeft : ""
-      } font-secondary text-xl font-medium ${
-        alignSelf === "end" ? "self-end" : "self-start"
-      }`}
+      className={`${marginLeft ? marginLeft : ""}
+      ${fontSize ? fontSize : "text-xl"} 
+      ${fontWeight ? fontWeight : "font-medium"} 
+      font-secondary  ${alignSelf === "end" ? "self-end" : "self-start"}`}
     >
       {words ? words.slice(0, -1).join(" ") : ""}
-      <strong className="font-bold text-red-500"> {words.slice(-1)}</strong>
+      <strong
+        className={`${fontWeight ? fontWeight : "font-bold"}  text-red-500`}
+      >
+        {" "}
+        {words.slice(-1)}
+      </strong>
     </span>
   );
 }
