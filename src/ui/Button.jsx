@@ -5,8 +5,8 @@ function Button({ children, isLastGridItem, type, size }) {
     full: "rounded-lg border-2 bg-red-500 border-none text-neutral-50 hover:bg-red-600",
   };
   const sizes = {
-    small: "px-8 py-0.5 text-lg font-light ",
-    big: "w-40 px-10 py-3 text-xl font-light ",
+    small: "px-6 py-0.5 text-lg font-light ",
+    big: "w-32 sm:w-40 px-6 py-3 text-xl font-light ",
   };
   return (
     <button
