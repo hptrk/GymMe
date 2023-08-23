@@ -1,11 +1,11 @@
-import KeyFeaturesBox from "./KeyFeaturesBox";
+import PromoBox from "./PromoBox";
 import SectionTitle from "./SectionTitle";
 
 function KeyFeatures() {
   return (
-    <section>
-      <SectionTitle>all for free</SectionTitle>
-      <KeyFeaturesBox />
+    <section className="mx-auto mt-10 flex w-4/5 flex-col gap-1">
+      <SectionTitle alignSelf={"end"}>key features</SectionTitle>
+      <PromoBox />
     </section>
   );
 }

@@ -4,12 +4,12 @@ function SectionTitle({ children, alignSelf }) {
 
   return (
     <span
-      className={`${
-        alignSelf && `self-${alignSelf}`
-      } font-secondary text-xl font-medium `}
+      className={`font-secondary text-xl font-medium ${
+        alignSelf === "end" ? "self-end" : "self-start"
+      }`}
     >
       {words.slice(0, -1).join(" ")}
-      <strong className="font-black text-red-500"> {words.slice(-1)}</strong>
+      <strong className="font-bold text-red-500"> {words.slice(-1)}</strong>
     </span>
   );
 }

@@ -7,11 +7,11 @@ import LandingPageNav from "../features/LandingPage/LandingPageNav";
 
 function LandingPage() {
   return (
-    <div className="bg-neutral-950 font-main text-neutral-50">
+    <div className="h-full bg-neutral-950 font-main text-neutral-50">
       <header>
         <LandingPageNav />
       </header>
-      <main className="h-screen">
+      <main>
         <Hero />
         <KeyFeatures />
         <AllForFree />
