@@ -37,7 +37,11 @@ function PromoBox({ type }) {
   };
 
   return (
-    <div className="relative flex flex-col space-y-8 rounded-lg bg-neutral-900 px-4 pb-8 pt-2">
+    <div
+      className={`relative flex flex-col space-y-8 rounded-lg bg-neutral-900 px-4 pt-2 ${
+        type === "features" ? "pb-8" : "pb-4"
+      } `}
+    >
       {data.data.map((item) => (
         <div
           className={`flex ${data.direction} items-center justify-start gap-4`}

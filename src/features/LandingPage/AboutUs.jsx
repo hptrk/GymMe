@@ -6,7 +6,7 @@ import Button from "../../ui/Button";
 
 function AboutUs() {
   return (
-    <section className=" mt-10">
+    <section className=" mt-10 space-y-2">
       <SectionTitle marginLeft={"ml-[5%]"}>about us</SectionTitle>
 
       <div className="relative">
