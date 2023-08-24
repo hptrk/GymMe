@@ -38,8 +38,8 @@ function PromoBox({ type }) {
 
   return (
     <div
-      className={`relative flex flex-col space-y-8 rounded-lg bg-neutral-900 px-4 pt-2 ${
-        type === "features" ? "pb-8" : "pb-4"
+      className={`relative flex  min-h-[19rem] flex-col items-center justify-center space-y-8 rounded-lg bg-neutral-900 px-4 pt-2 ${
+        type === "features" ? "pb-7" : "pb-4"
       } `}
     >
       {data.data.map((item) => (

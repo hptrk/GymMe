@@ -11,7 +11,7 @@ function LandingPage() {
       <header className="mb-4">
         <LandingPageNav />
       </header>
-      <main className="grid grid-cols-1 gap-10 ">
+      <main className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         <Hero />
         <KeyFeatures />
         <AllForFree />
