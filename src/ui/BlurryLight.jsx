@@ -6,7 +6,7 @@ function BlurryLight({ positions, translateY }) {
   return (
     <div
       className={`${positions}
-      ${translateY ? "translate-y-[-50%]" : ""}
+      ${translateY ? "-translate-y-1/2" : ""}
       absolute !m-0 h-12 w-12 bg-red-500/40 blur-2xl`}
     ></div>
   );

@@ -50,6 +50,7 @@ function PromoBox({ type }) {
           >
             {item.icon}
           </IconBox>
+
           <TextWithTitle
             title={item.name}
             text={item.text}
@@ -59,16 +60,16 @@ function PromoBox({ type }) {
         </div>
       ))}
 
-      <span className="absolute bottom-1 right-2 ">
-        {type === "features" && (
+      {type === "features" && (
+        <span className="absolute bottom-1 right-2 ">
           <SectionTitle
             fontSize={"text-xs font-black"}
             fontWeight={"font-normal"}
           >
             and even more...
           </SectionTitle>
-        )}
-      </span>
+        </span>
+      )}
 
       <BlurryLight positions={"top-[5%] left-5"} />
       <BlurryLight positions={"top-[50%] right-5"} translateY={true} />

@@ -7,6 +7,7 @@ function Button({ children, isLastGridItem, type, size }) {
   const sizes = {
     small: "px-6 py-0.5 text-lg font-light ",
     big: "w-32 sm:w-40 px-6 py-3 text-xl font-light ",
+    square: "p-2",
   };
   return (
     <button
