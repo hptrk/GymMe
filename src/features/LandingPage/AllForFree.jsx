@@ -3,7 +3,7 @@ import LandingPageImage from "./LandingPageImage";
 
 function AllForFree() {
   return (
-    <section className="mt-10 space-y-2">
+    <section className="space-y-2">
       <SectionTitle marginLeft={"ml-[5%]"}>all for free</SectionTitle>
       <LandingPageImage imageNumber={2} />
     </section>

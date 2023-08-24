@@ -8,10 +8,10 @@ import LandingPageNav from "../features/LandingPage/LandingPageNav";
 function LandingPage() {
   return (
     <div className="h-full bg-neutral-950 font-main text-neutral-50">
-      <header>
+      <header className="mb-4">
         <LandingPageNav />
       </header>
-      <main>
+      <main className="grid grid-cols-1 gap-10 ">
         <Hero />
         <KeyFeatures />
         <AllForFree />
