@@ -14,7 +14,7 @@ function SectionTitle({
       className={`${marginLeft ? marginLeft : ""}
       ${fontSize ? fontSize : "text-xl"} 
       ${fontWeight ? fontWeight : "font-medium"} 
-      font-secondary  ${alignSelf === "end" ? "self-end" : "self-start"}`}
+      font-secondary ${alignSelf ? alignSelf : "self-start"}`}
     >
       {words ? words.slice(0, -1).join(" ") : ""}
       <strong
